@@ -64,6 +64,18 @@ Where continent is not null
 Group By "date"
 order by 1,2;
 
+
+With cte_name AS 
+(Select "date", Sum(new_cases) As total_cases, Sum(new_deaths) As total_deaths
+From death_table
+Where continent is not null 
+Group By "date"
+order by 1,2
+)
+Select *, 100*(total_deaths/total_cases) As death_percentage
+From cte_name;
+
+
 Select Sum(new_cases) As total_cases, Sum(new_deaths) As total_deaths, 100*(Sum(new_deaths)/Sum(new_cases)) As death_percentage
 From death_table
 Where continent is not null 
