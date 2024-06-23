@@ -28,7 +28,7 @@ CREATE TABLE death_table (
 );
 
 -- Run the following in psql: 
--- \COPY death_table FROM 'C:/Users/ASUS/OneDrive - University of Waterloo/Tutorials/SQL/saraebrahsql-coronavirus-portfolio/CovidDeaths.csv' DELIMITER ',' CSV HEADER
+-- \COPY death_table FROM 'C:/Users/ASUS/OneDrive - University of Waterloo/Tutorials/SQL/saraebrahsql-coronavirus-portfolio/Data/CovidDeaths.csv' DELIMITER ',' CSV HEADER
 
 select * from death_table
 
@@ -74,6 +74,6 @@ CREATE TABLE vaccin_table (
 );
 
 -- Run the following in psql:
--- \COPY vaccin_table FROM 'C:/Users/ASUS/OneDrive - University of Waterloo/Tutorials/SQL/saraebrahsql-coronavirus-portfolio/CovidVaccinations.csv' DELIMITER ',' CSV HEADER
+-- \COPY vaccin_table FROM 'C:/Users/ASUS/OneDrive - University of Waterloo/Tutorials/SQL/saraebrahsql-coronavirus-portfolio/Data/CovidVaccinations.csv' DELIMITER ',' CSV HEADER
 
 select * from vaccin_table
